@@ -44,7 +44,7 @@ echo ""
 
 #check process cpu usage
 echo "Process CPU usage"
-ps -eo command,%mem | grep $service_name | grep -Ev grep
+ps -eo command,%cpu | grep $service_name | grep -Ev grep
 echo ""
 
 #check process ram usage
